@@ -16,6 +16,8 @@ ignore:
   - .git
   - .eslintrc.js
   - .prettier.js
+  - .commitlintrc.js
+  - .stylelintrc.js
   - vite.config.ts
   - .circleci
   - .github

@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+[ -n "$CI" ] && exit 0
+
+# Check
+npm run lint:eslint
+npm run lint:prettier
+npm run lint:ls-lint
+npm run lint:stylelint
+npm run lint:lint-staged
+

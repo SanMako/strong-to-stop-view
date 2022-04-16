@@ -7,7 +7,7 @@
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
-<style>
+<style lang="ts">
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

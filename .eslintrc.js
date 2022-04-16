@@ -19,9 +19,9 @@ module.exports = defineConfig({
   extends: [
     "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:prettier/recommended",
-    "plugin:jest/recommended",
+    // "prettier",
+    // "plugin:prettier/recommended",
+    // "plugin:jest/recommended",
   ],
   // ↓解析器选项
   parserOptions: {
@@ -29,7 +29,7 @@ module.exports = defineConfig({
     parser: "@typescript-eslint/parser",
     sourceType: "module",
   },
-  plugins: ["vue", "@typescript-eslint", "prettier"],
+  plugins: ["vue", "@typescript-eslint"],
   // ↓自定义规则配置
   rules: {
     "@typescript-eslint/ban-ts-ignore": "off", // 禁止使用@ts-ignore来消除ESLint检查
@@ -46,7 +46,7 @@ module.exports = defineConfig({
     "@typescript-eslint/explicit-module-boundary-types": "off", // 在导出的函数和类的公共类方法上需要显式的返回值和参数类型
     "no-var": "error", // 此规则旨在阻止var使用或鼓励改为使用const或let。
     "no-unused-vars": ["error"], // 禁止定义未使用的变量
-    "prettier/prettier": "error",
+    // "prettier/prettier": "error",
     "no-console": "warn", // 禁止出现console
     "no-debugger": "warn", // 禁用debugger
     "no-duplicate-case": "warn", // 禁止出现重复的 case 标签
